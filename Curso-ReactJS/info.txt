@@ -1,3 +1,13 @@
 CRA = Creat React App
+
 // para criar projetos react com typescript
+
 npx create-react-app react-primeiro --template typescript
+
+// criar o projeto com vite
+
+se tiver o npm >= 7 precisa de -- --templete alguma coisa 
+igual no exemplo ai
+
+
+npm init vite react-vite -- --template react-ts
