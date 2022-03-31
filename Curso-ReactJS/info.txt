@@ -11,3 +11,6 @@ igual no exemplo ai
 
 
 npm init vite react-vite -- --template react-ts
+
+// Expressões no JSX quando coloca isso { } vira uma expressao posso jogar codigo js dentro
+
