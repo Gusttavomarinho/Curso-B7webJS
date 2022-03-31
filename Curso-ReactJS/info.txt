@@ -1,0 +1,3 @@
+CRA = Creat React App
+// para criar projetos react com typescript
+npx create-react-app react-primeiro --template typescript
