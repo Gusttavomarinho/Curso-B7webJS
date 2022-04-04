@@ -16,7 +16,8 @@ const App = () => {
 
   return(
     <div>
-      <Header/>
+      <Header title="Este é um exemplo" version="1.0.0"/>
+      <Header title="Outro titulo" />
       <div>Meu nome é {name} , ihuu</div>
       <p>Soma: {somar(n1,n2)}</p>
       Link para o site:<br/>
