@@ -1,34 +1,24 @@
-import { Header } from "./components/Header";
-import { Photo } from "./components/Photo";
+import {useState} from 'react';
 
 
 const App = () => {
-  // return React.createElement('div',null,'Meu nome é Gustavo');
 
-  let name: string = "Gustavo";
-  let n1: number = 10;
-  let n2: number = 3;
+  const [numero,setNumero] = useState(0);
+  const [name,setName] = useState('Bonieky');
 
-  let link: string = "https://gusttavodev.com";
-
-  function somar(n1: number,n2: number): number{
-    return n1+n2
+  const handleButtonClick = () => {
+    // alert('O botão foi clicado!');
+    // numero++;
+    setName('Gustavo');
   }
 
   return(
     <div>
-      {/* treinando props */}
-      <Header title="Este é um exemplo" version="1.0.0"/>
-      <Header title="Outro titulo" />
-      <div>Meu nome é {name} , ihuu</div>
-      <p>Soma: {somar(n1,n2)}</p>
-      Link para o site:<br/>
-      <a href={link}>Clique aqui para acessar</a>
-      {/* // conceito de Filho ( Children) */}
-      <br/><br/><hr/>
-      <Photo legend="Google">
-        <img src="http://www.google.com.br/google.jpg" alt="Google Logo" />
-      </Photo>
+      O numero é: {numero}
+      <br/>
+      Meu nome é {name}
+      <br/>
+      <button onClick={handleButtonClick}>Clique aqui</button>
     </div>
   )
 }
