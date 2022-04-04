@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+import { Photo } from "./components/Photo";
 
 
 const App = () => {
@@ -16,12 +17,18 @@ const App = () => {
 
   return(
     <div>
+      {/* treinando props */}
       <Header title="Este é um exemplo" version="1.0.0"/>
       <Header title="Outro titulo" />
       <div>Meu nome é {name} , ihuu</div>
       <p>Soma: {somar(n1,n2)}</p>
       Link para o site:<br/>
       <a href={link}>Clique aqui para acessar</a>
+      {/* // conceito de Filho ( Children) */}
+      <br/><br/><hr/>
+      <Photo legend="Google">
+        <img src="http://www.google.com.br/google.jpg" alt="Google Logo" />
+      </Photo>
     </div>
   )
 }
