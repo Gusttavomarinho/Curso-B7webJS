@@ -11,3 +11,5 @@ botao.addEventListener("click", function () {
   // alert('clicou....');
   res.innerHTML = calcular(numero1.value, numero2.value);
 });
+
+// ofkdokopfdkpofkdpofkpdpokpo
